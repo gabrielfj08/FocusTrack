@@ -7,7 +7,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1></h1>
+    <nav class="barra-lateral">
+        <ul>
+            <li><button class="btn-calendario">Calendário</button></li>
+            <li><button class="btn-configurações">Configurações</button></li>
+            <li><button class="btn-perfil">Perfil</button></li>
+        </ul>
+    </nav>
+    <div class="quadros">
+        <div class="quadro">
+            <div class="conteudo-quadro">
+                <!-- Metas aqui -->
+                <button class="criar-meta">+ Nova Meta</button>
+            </div>
+        </div>
+        <div class="quadro">
+            <div class="conteudo-quadro">
+                <!-- Metas aqui -->
+                <button class="criar-meta">+ Nova Meta</button>
+            </div>
+        </div>
+        <div class="quadro">
+            <div class="conteudo-quadro">
+                <!-- Metas aqui -->
+                <button class="criar-meta">+ Nova Meta</button>
+            </div>
+        </div>
+    </div>
+    <button class="criar-quadro">+ Adcionar Quadro</button>
 </body>
+
+<div class="modal" id="modal-meta" hidden>
+    <div class="modal-conteudo">
+        <h2>Nova Meta</h2>
+        <label>Título:</label>
+        <input type="text" id="titulo-meta">
+
+        <label>Descrição:</label>
+        <input type="text" id="descricao-meta"></input>
+
+        <label>Subtarefas (separadas por vírgulas):</label>
+        <input type="text" id="subtarefas-meta">
+
+        <div class="modal-botoes">
+            <button id="cancelar-modal">Cancelar</button>
+            <button id="salvar-meta">Salvar</button>
+        </div>
+    </div>
+</div>
+
 <script src="script.js"></script>
 </html>

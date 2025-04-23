@@ -1,0 +1,90 @@
+:root {
+    --principal: #0c82a0;
+    --destaque: #14a6ca;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Barra lateral */
+  .barra-lateral {
+    width: 150px;
+    background-color: var(--principal);
+    color: white;
+    padding: 20px 10px;
+  }
+  
+  .barra-lateral ul {
+    list-style: none;
+  }
+  
+  .barra-lateral li {
+    margin: 15px 0;
+  }
+  
+  .barra-lateral button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Área dos quadros */
+  .quadros {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+  }
+  
+  /* Estilo dos quadros */
+  .quadro {
+    min-width: 250px;
+    background-color: #ffffff;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Botões */
+  .criar-meta,
+  .criar-quadro {
+    background-color: var(--principal);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .criar-meta:hover,
+  .criar-quadro:hover {
+    background-color: var(--destaque);
+  }
+  
+  /* Botão flutuante para criar quadro */
+  .criar-quadro {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+
