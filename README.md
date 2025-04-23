@@ -1,15 +1,53 @@
-# FocusTrack
+# 🧠 FocusTrack
 
 Aplicação para organização de metas e rotinas com interface baseada em quadros (Kanban). Desenvolvido com HTML, CSS e JavaScript puro como projeto de prática e portfólio.
+
+Inspirado visualmente em ferramentas como Trello e Notion, o FocusTrack tem como objetivo unir aprendizado técnico com experiência de usuário funcional e intuitiva.
+
+---
+
+## 🎯 Objetivo do Projeto
+
+- Praticar estruturação e lógica com tecnologias web puras (HTML/CSS/JS)
+- Desenvolver um projeto funcional para o portfólio
+- Explorar conceitos de layout responsivo, interatividade e UX
+
+---
 
 ## ✨ Funcionalidades (MVP)
 - Adicionar metas
 - Criar e visualizar quadros personalizados
 - Mover metas entre quadros conforme progresso
 
-🎯 Futuras melhorias:
-- Descrição detalhada por meta
-- Prazo e contagem regressiva
-- Mindset passo a passo para alcance de metas
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5
+- CSS3 (Flexbox, responsividade)
+- JavaScript (manipulação do DOM)
+- Git & GitHub
+
+---
+
+## 🔄 Melhorias em desenvolvimento
+
+- Substituir prompt() por formulário visual (modal)
+- Edição e exclusão de metas
+- Adição/remoção de subtarefas interativamente
+- Armazenamento local com `localStorage`
+- Botão “+ Novo Quadro” com funcionalidade completa
+- Transições suaves e dark mode
+
+---
+
+## 👨‍💻 Desenvolvido por
+
+**Gabriel Ferreira Jorge**  
+Estudante de Análise e Desenvolvimento de Sistemas (Uninter)  
+Desenvolvedor front-end em formação, apaixonado por tecnologia, UX e organização digital.
+
+🔗 [LinkedIn](https://www.linkedin.com/in/gabriel-jorge08)  
+🔗 [GitHub](https://github.com/gabrielfj08)
 
 🚧 Projeto em desenvolvimento.
