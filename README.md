@@ -4,6 +4,8 @@ Aplicação para organização de metas e rotinas com interface baseada em quadr
 
 Inspirado visualmente em ferramentas como Trello e Notion, o FocusTrack tem como objetivo unir aprendizado técnico com experiência de usuário funcional e intuitiva.
 
+🔗 [Veja o FocusTrack funcionando aqui](https://gabrielfj08.github.io/FocusTrack/)
+
 ---
 
 ## 🎯 Objetivo do Projeto
@@ -14,10 +16,12 @@ Inspirado visualmente em ferramentas como Trello e Notion, o FocusTrack tem como
 
 ---
 
-## ✨ Funcionalidades (MVP)
-- Adicionar metas
-- Criar e visualizar quadros personalizados
-- Mover metas entre quadros conforme progresso
+## ✨ Funcionalidades (MVP atual)
+Criar quadros personalizados
+
+- Adicionar metas com título, descrição e subtarefas
+- Interface de modais para adicionar quadros e metas
+- Layout responsivo e amigável
 
 ---
 
@@ -32,11 +36,10 @@ Inspirado visualmente em ferramentas como Trello e Notion, o FocusTrack tem como
 
 ## 🔄 Melhorias em desenvolvimento
 
-- Substituir prompt() por formulário visual (modal)
-- Edição e exclusão de metas
+- Edição de metas existentes
 - Adição/remoção de subtarefas interativamente
 - Armazenamento local com `localStorage`
-- Botão “+ Novo Quadro” com funcionalidade completa
+- Mindset passo a passo para alcance de metas
 - Transições suaves e dark mode
 
 ---
