@@ -4,7 +4,7 @@ Aplicação para organização de metas e rotinas com interface baseada em quadr
 
 Inspirado visualmente em ferramentas como Trello e Notion, o FocusTrack tem como objetivo unir aprendizado técnico com experiência de usuário funcional e intuitiva.
 
-🔗 [Veja o FocusTrack funcionando aqui]()
+🔗 [Veja o FocusTrack funcionando aqui](https://gabrielfj08.github.io/FocusTrack/)
 
 ---
 
