@@ -17,18 +17,32 @@
     <div class="quadros">
         <div class="quadro">
             <div class="conteudo-quadro">
+                <h2>Para Fazer</h2>
+                <br>
                 <!-- Metas aqui -->
                 <button class="criar-meta">+ Nova Meta</button>
             </div>
         </div>
         <div class="quadro">
             <div class="conteudo-quadro">
+               <h2>Fazendo</h2>
+                <br>
                 <!-- Metas aqui -->
                 <button class="criar-meta">+ Nova Meta</button>
             </div>
         </div>
         <div class="quadro">
             <div class="conteudo-quadro">
+                <h2>Melhorando</h2>
+                <br>
+                <!-- Metas aqui -->
+                <button class="criar-meta">+ Nova Meta</button>
+            </div>
+        </div>
+        <div class="quadro">
+            <div class="conteudo-quadro">
+                <h2>Feito</h2>
+                <br>
                 <!-- Metas aqui -->
                 <button class="criar-meta">+ Nova Meta</button>
             </div>
@@ -37,21 +51,38 @@
     <button class="criar-quadro">+ Adcionar Quadro</button>
 </body>
 
-<div class="modal" id="modal-meta" hidden>
-    <div class="modal-conteudo">
-        <h2>Nova Meta</h2>
-        <label>Título:</label>
-        <input type="text" id="titulo-meta">
+<div class="modal" id="modal" hidden>
+    <div class="modal-conteudo-meta" id="modal-conteudo-meta"hidden>
+        <h2>NOVA META</h2>
+        <div class="campo-formulario">
+            <input type="text" id="titulo-meta" placeholder=" " required>
+            <label for="titulo-meta">Título:</label>
+        </div>
 
-        <label>Descrição:</label>
-        <input type="text" id="descricao-meta"></input>
+        <div class="campo-formulario">
+            <input type="text" id="descricao-meta" placeholder=" " required>
+            <label for="descricao-meta">Descrição:</label>
+        </div>
 
-        <label>Subtarefas (separadas por vírgulas):</label>
-        <input type="text" id="subtarefas-meta">
+        <div class="campo-formulario">
+            <input type="text" id="subtarefas-meta" placeholder=" " required>
+            <label for="subtarefas-meta">Subtarefas (separadas por vírgulas):</label>
+        </div>
 
         <div class="modal-botoes">
-            <button id="cancelar-modal">Cancelar</button>
-            <button id="salvar-meta">Salvar</button>
+            <button id="cancelar-meta">Cancelar</button>
+            <button id="salvar-meta">Salvar Meta</button>
+        </div>
+    </div>
+    <div class="modal-conteudo-quadro" id="modal-conteudo-quadro" hidden>
+        <h2>NOVO QUADRO</h2>
+        <div class="campo-formulario">
+            <input type="text" id="titulo-quadro" placeholder=" " required>
+            <label for="titulo-quadro">Título:</label>
+        </div>
+        <div class="modal-botoes">
+            <button id="cancelar-quadro">Cancelar</button>
+            <button id="salvar-quadro">Salvar Quadro</button>
         </div>
     </div>
 </div>

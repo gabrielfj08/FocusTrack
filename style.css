@@ -88,3 +88,97 @@
     z-index: 10;
   }
 
+ /* Modal geral */
+.modal.ativo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* fundo escurecido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Conteúdo do Modal */
+.modal-conteudo-meta,
+.modal-conteudo-quadro {
+  display: none; /* Tudo escondido inicialmente */
+}
+
+.modal-conteudo-meta.ativo,
+.modal-conteudo-quadro.ativo {
+  display: flex; /* Só aparece se tiver classe ativo */
+  text-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+/* Botões */
+.modal-botoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal-botoes button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0c82a0;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-botoes button:hover {
+  background-color: #096278;
+}
+
+.campo-formulario {
+  position: relative;
+  margin-top: 20px;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+  width: 100%;
+  padding: 32px 50px 50px 32px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.campo-formulario label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #888;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.2 ease all;
+}
+
+.campo-formulario input:focus + label,
+.campo-formulario input:not(:placeholder-shown) + label,
+.campo-formulario textarea:focus + label,
+.campo-formulario textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 8px;
+  font-size: 12px;
+  background-color: #ffffff;
+  padding: 0 4px;
+  color: #0c82a0;
+}
