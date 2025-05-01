@@ -18,6 +18,7 @@
         <div class="quadro">
             <div class="conteudo-quadro">
                 <h2>Para Fazer</h2>
+                <button class="editar-quadro">...</button>
                 <br>
                 <!-- Metas aqui -->
                 <button class="criar-meta">+ Nova Meta</button>
@@ -26,6 +27,7 @@
         <div class="quadro">
             <div class="conteudo-quadro">
                <h2>Fazendo</h2>
+               <button class="editar-quadro">...</button>
                 <br>
                 <!-- Metas aqui -->
                 <button class="criar-meta">+ Nova Meta</button>
@@ -34,6 +36,7 @@
         <div class="quadro">
             <div class="conteudo-quadro">
                 <h2>Melhorando</h2>
+                <button class="editar-quadro">...</button>
                 <br>
                 <!-- Metas aqui -->
                 <button class="criar-meta">+ Nova Meta</button>
@@ -42,6 +45,7 @@
         <div class="quadro">
             <div class="conteudo-quadro">
                 <h2>Feito</h2>
+                <button class="editar-quadro">...</button>
                 <br>
                 <!-- Metas aqui -->
                 <button class="criar-meta">+ Nova Meta</button>
@@ -74,6 +78,7 @@
             <button id="salvar-meta">Salvar Meta</button>
         </div>
     </div>
+
     <div class="modal-conteudo-quadro" id="modal-conteudo-quadro" hidden>
         <h2>NOVO QUADRO</h2>
         <div class="campo-formulario">
@@ -84,6 +89,31 @@
             <button id="cancelar-quadro">Cancelar</button>
             <button id="salvar-quadro">Salvar Quadro</button>
         </div>
+    </div>
+
+    <div class="pop-up-meta" hidden>
+        <h2>Título da Meta</h2>
+        <button class="editar-titulo-quadro">Editar título da meta</button>
+        <button class="fachar-meta">x</button>
+        <p>Descrição da meta</p>
+        <p>Barra de prograsso, subtarefas</p>
+        <ul>
+            <li>            
+                <input type="text" id="subtarefa" placeholder=" " required>
+                <label for="subtarefa">Subtarefa</label>
+            </li>
+            <li>                
+                <input type="text" id="subtarefa" placeholder=" " required>
+                <label for="subtarefa">Subtarefa</label>
+            </li>
+            <li>                
+                <input type="text" id="subtarefa" placeholder=" " required>
+                <label for="subtarefa">Subtarefa</label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pop-up-quadro" hidden>
     </div>
 </div>
 
