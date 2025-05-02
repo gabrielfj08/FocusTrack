@@ -1,5 +1,7 @@
 const botoesCriarMeta = document.querySelectorAll('.criar-meta');
 const botoesCriarQuadro = document.querySelectorAll('.criar-quadro');
+const botoesEditarQuadro = document.querySelectorAll('.editar-quadro');
+const botoesEditarMeta = document.querySelectorAll('.editar-meta');
 let quadroSelecionado = null;
 let proxQuadro = null;
 
@@ -14,6 +16,7 @@ const botaoSalvarQuadro = document.getElementById('salvar-quadro');
 const botaoCancelarMeta = document.getElementById('cancelar-meta');
 const botaoCancelarQuadro = document.getElementById('cancelar-quadro');
 
+
 // Adiciona evento para abrir modal de meta
 botoesCriarMeta.forEach(botao => {
   botao.addEventListener('click', abrirModalMeta);
@@ -23,6 +26,17 @@ botoesCriarMeta.forEach(botao => {
 botoesCriarQuadro.forEach(botao => {
   botao.addEventListener('click', abrirModalQuadro);
 });
+
+// Adiciona evento para abrir modal de editar quadro
+botoesEditarQuadro.forEach(botao => {
+  botao.addEventListener('click', EditarQuadros);
+});
+
+// Adiciona evento para abrir modal de editar quadro
+botoesEditarMeta.forEach(botao => {
+  botao.addEventListener('click', EditarMetas);
+});
+
 
 // Ações de salvar
 botaoSalvarMeta.addEventListener('click', salvarMeta);
@@ -74,7 +88,7 @@ function salvarMeta() {
   const meta = document.createElement('div');
   meta.classList.add('meta');
 
-  const titleMeta = document.createElement('h3');
+  const titleMeta = document.createElement('h4');
   titleMeta.textContent = titulo;
 
   const descritionMeta = document.createElement('p');
@@ -147,7 +161,8 @@ function salvarQuadro() {
   const botaoEditarQuadro = document.createElement('button');
   botaoEditarQuadro.classList.add('editar-quadro');
   botaoEditarQuadro.textContent = '...';
-  botaoEditarQuadro.addEventListener('click', () => popUpQuadro(quadro));
+  botaoEditarQuadro.addEventListener('click', () => popUpQuadro(quadro));  
+  
 
   const br = document.createElement('br');
 
@@ -167,6 +182,25 @@ function salvarQuadro() {
   fecharModal();
   limparCamposQuadro();
 }
+
+function EditarQuadros() {
+  botoesEditarQuadro.forEach(botao => {
+    botao.addEventListener('click', (e) => {
+      const quadro = e.target.closest('.quadro');
+      popUpQuadro(quadro);
+    });
+  });
+}
+
+function EditarMetas() {
+  botoesEditarMeta.forEach(botao => {
+    botao.addEventListener('click', (e) => {
+      const meta = e.target.closest('.meta');
+      popUpMeta(meta);
+    });
+  });
+}
+
 
 // Fecha o modal
 function fecharModal() {
@@ -201,23 +235,22 @@ function popUpMeta(meta) {
     case '1':
       const novoTitulo = prompt('Novo título da meta:');
       if (novoTitulo) {
-        meta.querySelector('h3').textContent = novoTitulo;
+        meta.querySelector('h4').textContent = novoTitulo;
       }
       break;
-
+    
     case '2':
       const novaDescricao = prompt('Nova descrição da meta:');
-      if (novaDescricao !== null) {
+      if (novaDescricao) {
         meta.querySelector('.descricao-meta').textContent = novaDescricao;
       }
       break;
-
+    
     case '3':
-      const confirmar = confirm('Tem certeza que deseja excluir esta meta?');
-      if (confirmar) {
+      if (confirm('Tem certeza que deseja excluir esta meta?')) {
         meta.remove();
       }
-      break;
+      break;    
 
     default:
       alert('Opção inválida!');

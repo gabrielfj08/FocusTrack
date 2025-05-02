@@ -182,3 +182,13 @@
   padding: 0 4px;
   color: #0c82a0;
 }
+
+.meta .descricao,
+.meta .subtarefas {
+  display: none;
+}
+
+.meta:hover .descricao,
+.meta:hover .subtarefas {
+  display: block;
+}
